@@ -45,6 +45,8 @@ public class Enlace {
     public void insertarCiudad(Ciudad ciudad) {  
   
         try{  
+            // es el  nombre de la tabla que tiene que estar creada en la base de datos
+            
             establecerConexion();
             Statement statement = obtenerConexion().createStatement();
             String data = String.format("INSERT INTO Ciudad (nombre, poblacion) "
