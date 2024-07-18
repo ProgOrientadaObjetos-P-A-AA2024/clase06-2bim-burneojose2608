@@ -70,6 +70,10 @@ public class Enlace {
             
             ResultSet rs = statement.executeQuery(data);
             while(rs.next()){
+                /*
+                se envian datos de los objetos donde se almacenan en a base de datos
+                
+                */
                 Ciudad miCiudad = new Ciudad(rs.getString("nombre"),
                 rs.getInt("poblacion"));
                 lista.add(miCiudad);
